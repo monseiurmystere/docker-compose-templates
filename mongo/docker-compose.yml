@@ -1,0 +1,12 @@
+services:
+  mongo:
+    image: mongo
+    container_name: $CONTAINER_NAME
+    ports:
+      - "${PORT_IN}:${PORT_OUT}"
+    volumes:
+      - ./data/db:${VOLUME_LOCATION}
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: $MONGO_ROOT_USR
+      MONGO_INITDB_ROOT_PASSWORD: $MONGO_ROOT_PSSWRD
