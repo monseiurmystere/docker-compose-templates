@@ -12,4 +12,4 @@ services:
     ports:
       - "${INSIGHT_PORT_IN}:${INSIGHT_PORT_OUT}"
     volumes:
-      - /data/redisinsight:${INSIGHT_VOLUME_LOCATION}
+      - ./data/redisinsight:${INSIGHT_VOLUME_LOCATION}
