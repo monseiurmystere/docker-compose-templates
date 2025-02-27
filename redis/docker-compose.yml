@@ -5,11 +5,11 @@ services:
     ports:
       - "${STACK_PORT_IN}:${STACK_PORT_OUT}"
     volumes:
-      - /data:${STACK_VOLUME_LOCATION}
+      - ./data:${STACK_VOLUME_LOCATION}
   redis-insight:
     image: redis/redis-stack:latest
     container_name: $INSIGHT_CONTAINER_NAME
     ports:
       - "${INSIGHT_PORT_IN}:${INSIGHT_PORT_OUT}"
     volumes:
-      - /data/redisinsight:${INSIGHT_VOLUME_LOCATION}
+      - ./data/redisinsight:${INSIGHT_VOLUME_LOCATION}
