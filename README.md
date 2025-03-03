@@ -20,3 +20,5 @@ Please keep in mind that these templates are meant to get you started. You will 
 - \(optional\) Port Assignments
   - The port out values. The port in values are standardised to the services.
 - Passwords/Usernames
+
+> Please note that this repository is split between two remotes. The GitHub repository is the mainline, where merges and changes are pushed. The history is based on the GitHub repository.
