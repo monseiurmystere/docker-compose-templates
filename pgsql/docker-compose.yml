@@ -1,0 +1,13 @@
+services:
+  postgresql:
+    image: postgres:${IMAGE_VERSION}
+    restart: always
+    container_name: $CONTAINER_NAME
+    environment:
+      POSTGRES_PASSWORD: $PGSQL_PASSWORD
+      POSTGRES_USER: $PGSQL_USER
+      POSTGRES_DB: $PGSQL_DATABASE
+    ports:
+      - "${PORT_IN}:${PORT_OUT}"
+    volumes:
+      - ./pgdata:${PG_VOLUME_LOCATION}
