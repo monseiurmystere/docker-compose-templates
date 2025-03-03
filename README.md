@@ -8,3 +8,15 @@ This is a simple rolling project that is designed to be a tool to help with loca
   - Stack Server
   - Insight
 - MongoDB
+- PostgreSQL \(coming soon...\)
+  - \(I\'m currently looking for a suitable administration interface.\)
+
+## Using these templates
+
+Please keep in mind that these templates are meant to get you started. You will have to customize the template further as you need.
+
+### Things that need to be changed:
+- Docker Volume Locations
+- \(optional\) Port Assignments
+  - The port out values. The port in values are standardised to the services.
+- Passwords/Usernames
