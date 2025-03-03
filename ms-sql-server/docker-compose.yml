@@ -1,6 +1,6 @@
 services:
   sql-server:
-    image: mcr.microsoft.com/mssql/server
+    image: mcr.microsoft.com/mssql/server:{$IMAGE_VERSION}
     container_name: $CONTAINER_NAME
     environment:
       SA_PASSWORD: $ADMIN_PASSWORD
