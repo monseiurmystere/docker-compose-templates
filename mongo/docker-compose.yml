@@ -1,6 +1,6 @@
 services:
   mongo:
-    image: mongo
+    image: mongo:${IMAGE_VERSION}
     container_name: $CONTAINER_NAME
     ports:
       - "${PORT_IN}:${PORT_OUT}"
