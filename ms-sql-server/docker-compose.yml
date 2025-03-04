@@ -8,6 +8,6 @@ services:
     ports:
       - "${PORT_IN}:${PORT_OUT}"
     volumes:
-      - ./data:${DATA_LOCATION}
-      - ./log:${LOGS_LOCATION}
-      - ./secrets:${SECRETS_LOCATION}
+      - ${DATA_LOCATION}:./data
+      - ${LOGS_LOCATION}:./log
+      - ${SECRETS_LOCATION}:./secrets
